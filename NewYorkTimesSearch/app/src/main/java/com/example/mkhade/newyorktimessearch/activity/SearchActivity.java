@@ -179,7 +179,7 @@ public class SearchActivity extends AppCompatActivity {
         articles.clear();
         adapter.notifyDataSetChanged();
         onArticleSearch(storedString, 0);
-        adapter.notifyDataSetChanged();
+        scrollListener.resetState();
     }
 
     public void onArticleSearch(String query, int page) {
